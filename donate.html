@@ -1,0 +1,140 @@
+<html>
+<title>Donate</title>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lora", sans-serif}
+.menu {display: none}
+.bgimg {
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("home2.jpg");
+    min-height: 100%;
+}
+</style>
+    <body>
+        
+         <!-- Navbar (sit on top) -->
+<div class="w3-padding-32 w3-white ">
+    <span class="w3-text-green w3-hide-small " style= "font-size: 250%; margin-top: 2%; margin-left: 2%">RightGrain</span>
+    <div class="w3-container ">    
+		 </div>
+  <div class="w3-row  "style="margin-top: -2%; margin-left: 50%" id="myNavbar">
+    <a href="home.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="donate.html" class="w3-bar-item w3-button">DONATE</a>
+       <a href="buysell.html" class="w3-bar-item w3-button">BUYSELL</a>
+    <a href="home.html#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="home.html#contact" class="w3-bar-item w3-button">CONTACT</a>
+    <a href="home.html#feedback" class="w3-bar-item w3-button">FEEDBACK</a>
+  </div>
+</div>
+<!-- Donate Container -->
+      
+
+<div class="w3-container w3-white w3-padding-64 w3-large" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-xxxlarge" style="margin-bottom:40px">DONATE</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey" >
+      <a href="javascript:void(0)" onclick="openMenu(event, 'cash');" id="myLink">
+        <div class="w3-col s6 tablink w3-padding-large w3-hover-green ">Cash</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'tools');">
+        <div class="w3-col s6 tablink w3-padding-large w3-hover-green">Tools</div>
+      </a>
+     
+    </div>
+
+    <div id="cash" class="w3-container menu w3-padding-32 w3-white w3-border w3-border-dark-gray">
+        
+        <div class="w3-container" style= "margin-left: 2%">
+            <p>
+                <a href="addpost.php" class="w3-button w3-green w3-round-large">
+                   Add post
+                </a>
+            </p>
+ 
+  <p class="w3-text-grey ">Add post if you want donation</p>
+      <hr>
+</div>
+
+     
+      
+   <div class="w3-container" style= "margin-left: 2%">
+       <p>
+                <a href="findcash.php" class="w3-button w3-green w3-round-large">
+                   Find post
+                </a>
+            </p>
+       
+
+  <p class="w3-text-grey ">Find post if you want to donate</p>
+      <hr>
+</div>
+      
+     
+    </div>
+
+    <div id="tools" class="w3-container menu w3-padding-32 w3-white w3-border w3-border-dark-gray">
+         <div class="w3-container" style= "margin-left: 2%">
+           <p>
+                <a href="addtools.html" class="w3-button w3-green w3-round-large">
+                   Add post
+                </a>
+            </p>  
+ <!-- <p><button class="w3-button w3-green w3-round-large">Add Post</button></p>-->
+  <p class="w3-text-grey ">Add post if you want donation</p>
+      <hr>
+</div>
+     
+      
+   <div class="w3-container" style= "margin-left: 2%">
+        <p>
+                <a href="findtools.php" class="w3-button w3-green w3-round-large">
+                   Find post
+                </a>
+            </p>
+       
+ <!-- <p><button class="w3-button w3-green w3-round-large">Find Post</button></p>-->
+  <p class="w3-text-grey ">Find post if you want to donate</p>
+      <hr>
+</div>
+    </div>
+
+
+   <br>
+      
+      <br>
+      <br>
+
+  </div>
+</div>
+        
+        
+        <script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+    
+    </body>
+
+</html>

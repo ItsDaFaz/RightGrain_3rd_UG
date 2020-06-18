@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Find Information</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-medium w3-white w3-opacity w3-hover-opacity-off" style="margin-top: 2%; margin-left: 50%" id="myNavbar">
+    <a href="../home.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="../home.html#menu" class="w3-bar-item w3-button">DONATE</a>
+     <a href="../buysell.html" class="w3-bar-item w3-button">BUYSELL</a>
+    <a href="../home.html#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="../home.html#contact" class="w3-bar-item w3-button">CONTACT</a>
+    <a href="../home.html#feedback" class="w3-bar-item w3-button">FEEDBACK</a>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container " id="home">
+
+     <span class="w3-text-green w3-hide-small" style= "font-size: 300%; margin-top: 2%; margin-left: 2%">RightGrain</span>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <header class="bgimg w3-display-container " id="home">
+
+     <span class="w3-text-green w3-hide-small" style= "font-size: 300%; margin-top: 2%; margin-left: 2%">RightGrain</span>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-black" style="font-weight:bold">
+    <a href="#" class="w3-bar-item w3-button">My Profile</a>
+    <a href="#" class="w3-bar-item w3-button">Buy/Sell</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      Information <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+
+      <a href="#" class="w3-bar-item w3-button">Crop</a>
+      <a href="#" class="w3-bar-item w3-button">Disease</a>
+
+    </div>
+    <a href="#" class="w3-bar-item w3-button">Favourites</a>
+
+
+  </div>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">About </a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Email Us</a>
+
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>Find Information</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Filter:</span>
+      <button class="w3-button w3-black">ALL</button>
+      <button class="w3-button w3-white"><i class="fa fa-fruit w3-margin-right"></i>Fruit</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Vegetable</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Spice</button>
+    </div>
+    </div>
+  </header>
+
+  <!-- First Photo Grid-->
+  <a href="./apple.html">
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="../pics1/apple.jpg" alt="Apple" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Apple</b></p>
+
+      </div>
+    </div>
+  </a>
+
+    <a href="./pear.html">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="../pics1/pear.jpg" alt="Pear" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Pear</b></p>
+
+      </div>
+    </div>
+  </a>
+
+  <a href="./rose.html">
+    <div class="w3-third w3-container">
+      <img src="../pics1/rose.jpg" alt="Rose" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Rose</b></p>
+
+      </div>
+    </div>
+  </div>
+</a>
+
+  <!-- Second Photo Grid-->
+  <a href="./mango.html">
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="../pics1/mango.jpg" alt="Mango" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Mango</b></p>
+
+      </div>
+    </div>
+  </a>
+
+  <a href="./cauliflower.html">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="../pics1/cauliflower.jpg" alt="Cauliflower" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Cauliflower</b></p>
+
+      </div>
+    </div>
+</a>
+    <a href="./corn.html">
+    <div class="w3-third w3-container">
+      <img src="../pics1/corn.jpg" alt="Corn" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Corn</b></p>
+
+      </div>
+    </div>
+  </div>
+</a>
+  <!-- Third Photo Grid-->
+
+  <div class="w3-row-padding">
+
+  </div>
+
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="./InfoMainP1.html" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="./InfoMainP1.html" class="w3-bar-item w3-button w3-hover-black ">1</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">2</a>
+
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Any Question?</h4>
+        <p>Go ahead.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Send</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>About</h4>
+        <p><a href="#">About us</a></p>
+        <p><a href="#">We're hiring</a></p>
+        <p><a href="#">Support</a></p>
+        <p><a href="#">Find store</a></p>
+
+        <p><a href="#">Payment</a></p>
+
+        <p><a href="#">Help</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> RightGrain</p>
+        <p><i class="fa fa-fw fa-phone"></i> 0171323458</p>
+        <p><i class="fa fa-fw fa-envelope"></i> RightGrain@gmail.com</p>
+        <h4>We accept</h4>
+        <p><i class="fa fa-fw fa-cc-amex"></i> Bkash</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
